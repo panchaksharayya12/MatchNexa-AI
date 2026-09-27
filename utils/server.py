@@ -15,7 +15,7 @@ from rapidfuzz import fuzz
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Ensure working directory
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(BASE_DIR)
 
 LEGAL_SUFFIXES = {

@@ -76,7 +76,6 @@ MatchNexa implements a three-stage funnel architecture to reduce a 3-trillion pa
 MatchNexa-AI/
 |-- index.html                         # Interactive Web Platform & 3D Canvas
 |-- aureon_template.html               # Base UI Template
-|-- requirements.txt                   # Production Python Dependencies
 |-- .gitignore                         # Excludes >100MB files for GitHub compliance
 |-- README.md                          # Repository Documentation & Web Link
 |
@@ -91,6 +90,8 @@ MatchNexa-AI/
 |   |-- pipeline.py                    # End-to-End Orchestrator
 |
 |-- utils/                             # Utility & Build Scripts
+|   |-- requirements.txt               # Local Python Dependencies
+|   |-- server.py                      # Local Development Web Server
 |   |-- build_master_showcase_v2.py    # Builds production index.html
 |   |-- generate_documents.py          # Generates docx and pptx deliverables
 |   |-- validate_submission.py         # Official submission formatting validator
