@@ -1,0 +1,19 @@
+# Large datasets exceeding GitHub 100MB hard limit
+dataset/
+output/*.tsv
+*.zip
+*.mp4
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# System and IDE directories
+.system_generated/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
