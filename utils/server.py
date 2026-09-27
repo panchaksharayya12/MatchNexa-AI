@@ -8,7 +8,8 @@ import sys
 import os
 import json
 import re
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+import socket
+from http.server import HTTPServer, ThreadingHTTPServer, SimpleHTTPRequestHandler
 import urllib.parse
 from rapidfuzz import fuzz
 
@@ -212,9 +213,22 @@ class MatchNexaHandler(SimpleHTTPRequestHandler):
         self.send_response(404)
         self.end_headers()
 
+class DualStackServer(ThreadingHTTPServer):
+    address_family = socket.AF_INET6
+
+    def server_bind(self):
+        try:
+            self.socket.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
+        except (AttributeError, OSError):
+            pass
+        super().server_bind()
+
 def run_server(port=8050):
     server_address = ('', port)
-    httpd = HTTPServer(server_address, MatchNexaHandler)
+    try:
+        httpd = DualStackServer(server_address, MatchNexaHandler)
+    except Exception:
+        httpd = ThreadingHTTPServer(server_address, MatchNexaHandler)
     print(f"==================================================")
     print(f"MatchNexa Showcase Server running on http://localhost:{port}")
     print(f"Live Data Explorer & REST APIs active.")
