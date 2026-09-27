@@ -1,5 +1,6 @@
 # MatchNexa: AI-Powered Business Entity Resolution
-**Amazon ML Challenge 2026**
+**Amazon ML Challenge 2026**  
+**Live Platform:** https://panchaksharayya12.github.io/MatchNexa-AI/
 
 ## Overview
 MatchNexa is a high-precision, scalable machine learning entity resolution system engineered specifically for the Amazon ML Challenge 2026. The objective is to resolve noisy business records across three independent data sources (Source 1 reference, Source 2, and Source 3) under a strict Macro $F_{0.5}$ metric with heavy penalty for false merges and explicit handling of singletons (entities with zero matches).

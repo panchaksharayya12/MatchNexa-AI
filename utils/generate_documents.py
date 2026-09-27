@@ -588,7 +588,7 @@ def build_presentation_deck():
             "title": "Interactive MatchNexa Enterprise Showcase",
             "subtitle": "Production-Grade Web Application with 3D Liquid Canvas and Real-Time Copilot",
             "cards": [
-                ("Live HTTP Console", "Running live on port 8050 with responsive data ledger, candidate explorer, and real-time simulator."),
+                ("Live Web Platform", "Hosted live at https://panchaksharayya12.github.io/MatchNexa-AI/ with responsive data ledger, candidate explorer, and real-time simulator."),
                 ("AI Assistant Copilot", "Integrated interactive MatchNexa Copilot capable of dataset inspection, pair comparisons, and rules explanations."),
                 ("Multi-Country Mobile Auth", "Adaptive country code selector (+91 default, 50+ countries), OTP generator, and dual phone/email portal."),
                 ("Direct Package Download", "NeuroNexa_submission.zip servable directly over HTTP with real-time download telemetry.")
@@ -624,7 +624,7 @@ def build_presentation_deck():
                 ("Master Submission ZIP", "NeuroNexa_submission.zip (254.3 MB, verified, valid, ready for final upload)"),
                 ("Complete Documentation", "Technical Report (.docx), Literature Review (.docx), Academic Research Paper (.docx)"),
                 ("Executive Presentation Deck", "MatchNexa_Presentation_Deck.pptx (12 High-Impact Widescreen 16:9 Slides)"),
-                ("Live Interactive Platform", "Accessible locally at http://localhost:8050/index.html")
+                ("Live Interactive Platform", "Hosted live at https://panchaksharayya12.github.io/MatchNexa-AI/ (Local: http://localhost:8050/index.html)")
             ]
         }
     ]

@@ -3,6 +3,7 @@
 
 **Team Name:** NeuroNexa  
 **Solution Name:** MatchNexa: AI-Powered High-Precision Business Entity Resolution  
+**Live Web Platform:** https://panchaksharayya12.github.io/MatchNexa-AI/  
 **Target Metric:** Macro-Averaged $F_{0.5}$ (Precision-Weighted Entity Linkage)  
 
 ---
