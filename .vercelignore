@@ -1,0 +1,12 @@
+# Vercel Ignore - Prevents Vercel from treating offline ML/Python scripts as serverless functions
+server.py
+src/
+code/
+utils/
+student_resource/
+requirements.txt
+*.py
+*.pkl
+*.tsv
+*.zip
+*.mp4

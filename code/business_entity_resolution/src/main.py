@@ -37,3 +37,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Vercel entrypoint exports
+handler = main
+app = main
+application = main
+
