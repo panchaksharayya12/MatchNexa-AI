@@ -1,6 +1,7 @@
 # MatchNexa AI: Scalable Business Entity Resolution
 
-Live Web Platform: https://panchaksharayya12.github.io/MatchNexa-AI/  
+Live Web Platform (Vercel Production): https://match-nexa-ai.vercel.app  
+Live Web Platform (GitHub Pages Mirror): https://panchaksharayya12.github.io/MatchNexa-AI/  
 Local Interactive Server: http://localhost:8050/index.html  
 Official Competition: Amazon ML Challenge 2026  
 Submission Team: NeuroNexa  
